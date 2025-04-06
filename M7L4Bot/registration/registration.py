@@ -46,7 +46,7 @@ def user_choice():
 
 def main():
     create_db()
-    display_users()  # Показать список пользователей перед выбором действия
+    display_users()
 
     choice = user_choice()
 
@@ -65,5 +65,5 @@ def main():
     else:
         print("Неверный ввод. Пожалуйста, введите 1 для авторизации или 2 для регистрации.")
 
-if __name__ == "__main__":
+if __name__ == "__main__":  # pragma: no cover
     main()
